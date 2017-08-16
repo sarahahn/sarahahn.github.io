@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <!--[if lte IE 9]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif-->
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+
+  <title>cocacola korea페이지에 오신 모두를 환영합니다.</title>
+</head>
+<style>
+  #wrap{width:940px;height:auto;margin:0 auto;background-color:#f6f3ee;}
+    #headBox{width:100%;height:auto;}
+      .unb{width:100%;height:auto;background-color:#010101;}
+        .unb>ul{height:40px;float:right;margin-right:20px; }
+        .unb>ul>li{float:left;color:#fff;margin:5px;font-size:0.8em; line-height:2;}
+      h1{width:300px;height:70px;margin:15px 320px;background-color:#e80b20;background-image:url("../img/pofol_img/logo_1.jpg");background-size:100%;background-position:center;}
+      .gnb{width:100%;height:auto;}
+        .gnb>ul{width:500px;height:30px;margin:auto;margin-bottom:10px;margin-left:220px; padding:0 10px; box-sizing:border-box;}
+        .gnb>ul>li{text-align:center;margin-right:49px;float:left;}
+        .gnb>ul>li:last-child{text-align:center;margin-right:0;float:left;}
+
+    #contentBox{width:100%;height:auto;}
+      .videoBox{width:100%;height:560px; position: relative;padding-top: 60px; margin-bottom:100px;}
+        .videoBox:before{content:" "; display:block;width:100%; height:325px; background-color:#e80b20; position: absolute; top: 0; left: 0;}
+        .videoBox>.replay{width:820px;height:500px;background-color:#fff;margin:auto; position: relative; top: 0; left: 0;}
+      .eventBox{width:100%;height:auto;padding:10px 60px 0;box-sizing:border-box;margin-bottom: 100px;}
+        .eventBox>h3{width:100px;height:60px;margin-left:420px;margin-bottom:10px;font-size:1.5em;}
+        .eventBox>ul{width:100%;height:610px; position:relative;}
+        .eventBox>ul>li{width:240px;height:340px;float:left;margin-left:-50px;font-size:0.9em;text-align:center; position: relative; z-index:100;}
+        .eventBox>ul>li:hover{z-index:150;}
+          .eventBox>ul>li:nth-child(2n)>a:first-of-type{background-color: #adc;}
+          .eventBox>ul>li:nth-child(1){margin-top:120px; margin-left: 0;}
+          .eventBox>ul>li:nth-child(2){margin-top:20px;}
+          .eventBox>ul>li:nth-child(3){margin-top:210px;}
+          .eventBox>ul>li:nth-child(4){margin-top:95px;margin-right:0;margin-left:-40px;}
+        .eventBox>ul>li>a:first-of-type{width:100%;height:350px;background-color:#6aa;display: block;}
+        .eventBox>ul>li>a:last-of-type{width:100%;height:50px;float:left;margin-top:5px;}
+      .snsBox{width:100%;height:auto;background-color:#010101;color:#fff;padding:15px 300px;box-sizing:border-box;margin-bottom:100px;}
+        .snsBox>h3{width:100%;height:25px;text-align:center;}
+        .snsBox>ul{width:100%;height:70px; padding:20px 25px 0; box-sizing:border-box;}
+        .snsBox>ul>li{width:50px; height:50px;float:left;margin-right:70px;}
+          .snsBox>ul>li:last-child{margin-right:0;}
+      .productBox{width:100%;height:auto;padding:0 60px;box-sizing:border-box; margin-bottom:100px;}
+        .productBox>h3{width:140px;height:40px;margin-left:400px;margin-bottom:30px;text-align:center;font-size:1.5em;}
+        .productBox>ul{width:820px;height:275px; padding:20px; box-sizing:border-box;}
+        .productBox>ul>li{width:180px;height:180px;margin-right:120px;float:left;}
+          .productBox>ul>li:last-child{margin-right:0;}
+        .productBox>ul>li>a:first-of-type{width:200px;height:200px;float:left;background-color:#f69;}
+        .productBox>ul>li>a:last-of-type{width:200px;height:40px;float:left;text-align:center;margin-top:10px;}
+        .productBox>ul>li>a:last-of-type:hover{font-size:1.2em; color:#e80b20;}
+          
+
+     #footBox{width:100%;height:auto;background-color:#444;color:#f6f3ee;padding:20px;box-sizing:border-box;}
+      #footBox>.title_logo{width:100%;height:50px; position: relative;}
+      #footBox>.title_logo:after{content:" "; display:block; width: 100%; border-bottom: 1px solid #f6f3ee; position: absolute; bottom:1em; left: 0;}
+        #footBox>.title_logo>h2{width:125px;height:36px;margin-left:20px;float:left;text-align:center;}
+        #footBox>.title_logo>.logo{width:100px;height:50px;background-color:#e80b20;float:right;margin-top:-10px; position: relative; z-index:100;}
+      #footBox>.companyinfo{width:100%;height:150px;padding:20px 110px;box-sizing:border-box;}
+        #footBox>.companyinfo>.family{width:180px;height:125px;float:left;margin-right:60px;}
+          #footBox>.companyinfo>.family>h3{width:100%;height:25px;}
+          #footBox>.companyinfo>.family>ul{width:100%;height:100px;letter-spacing:-1px; font-size:0.875em;padding:10px;box-sizing:border-box;}
+            #footBox>.companyinfo>.family>ul>li{width:160px;height:22px;margin-bottom:7px;letter-spacing:-1px; font-size:0.875em;}
+            #footBox>.companyinfo>.family>ul>li:last-child{margin-bottom:0;}
+        #footBox>.companyinfo>.info{width:180px;height:125px;float:left;}
+          #footBox>.companyinfo>.info>h3{width:100%;height:25px;}
+          #footBox>.companyinfo>.info>ul{width:100%;height:100px;letter-spacing:-1px; font-size:0.875em;padding:10px;box-sizing: border-box;}
+            #footBox>.companyinfo>.info>ul>li{width:160px;height:22px;margin-bottom:7px;letter-spacing:-1px; font-size:0.875em;}
+            #footBox>.companyinfo>.info>ul>li:last-child{margin-bottom:0;}
+        #footBox>.companyinfo>address{width:240px;height:125px;float:left;font-style:normal;}
+          #footBox>.companyinfo>address>h3{width:100%;height:25px;}
+          #footBox>.companyinfo>address>ul{width:100%;height:100px;letter-spacing:-1px; font-size:0.875em;padding:10px;box-sizing:border-box;}
+            #footBox>.companyinfo>address>ul>li{width:220px;height:22px;margin-bottom:7px;}
+            #footBox>.companyinfo>address>ul>li:last-child{height:51px;margin-bottom:0;}
+      #footBox>.copyright{width:100%;height:20px;text-align:center;margin-top:10px;font-size:0.8em;}
+  
+</style>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div class="unb clearfix">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">법적고지</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </div>
+      <h1><span class="hidden">cocacola</span></h1>
+      <div class="gnb">
+        <ul>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">COKE ZINE</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">NOTICE</a></li>
+        </ul>
+      </div>
+  </header> <!-- // #header -->
+
+  <section id="contentBox">
+    <h2><span class="hidden">코카콜라 동영상 및 이벤트 등등의 내용입니다.</span></h2>
+      <header class="videoBox">
+        <h3 class="replay"><span class="hidden">코카콜라CF동영상 입니다.</span></h3>
+      </header>
+      <article class="eventBox">
+        <h3><a href="#">EVENT</a></h3>
+        <ul>
+          <li>
+            <a href="#"><span class="hidden">브라질월드컵 이벤트 이미지 입니다.</span></a>
+            <a href="#">코카콜라와 함께 <br />브라질 월드컵 가자!</a>
+          </li>
+          <li>
+            <a href="#"><span class="hidden">코카콜라 보틀 이벤트 이미지 입니다.</span></a>
+            <a href="#">코카콜라보틀의 <br />주인공이 되어보세요</a>
+          </li>
+          <li>
+            <a href="#"><span class="hidden">coke future feed참여 이벤트의 이벤트 이미지 입니다.</span></a>
+            <a href="#">coke future feed참여 event</a></li>
+          <li>
+            <a href="#"><span class="hidden">신제품 스파이시 삼바의 이벤트 이미지 입니다.</span></a>
+            <a href="#">신제품 스파이시 삼바</a></li>
+        </ul>
+      </article>
+      <div class="snsBox">
+        <h3>Coca-cola의 새 소식을 sns에서 만나요!</h3>
+        <ul>
+          <li>
+            <a href="#">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true">
+            <span class="hidden">facebook</span></i></a>
+          </li>
+          <li>
+            <a href="#">
+            <i class="fa fa-instagram fa-3x" aria-hidden="true">
+            <span class="hidden">instargram</span></i></a>
+          </li>
+          <li>
+            <a href="#">
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true">
+            <span class="hidden">twitter</span></i></a>
+            </li>
+        </ul>
+      </div>
+      <div class="productBox">
+        <h3>PRODUCT</h3>
+        <ul>
+          <li>
+            <a href="#"><span class="hidden">img</span></a>
+            <a href="#">톡톡 상큼하게 터지는 </br>탄산음료 만나기</a>
+          </li>
+          <li>
+            <a href="#"><span class="hidden">img</span></a>
+            <a href="#">Cool~ 하게 마시는 </br>음료 만나기</a>
+          </li>
+          <li>
+            <a href="#"><span class="hidden">img</span></a>
+            <a href="#">우리몸에 충전하자! </br> water 만나기</a>
+          </li>
+        </ul>
+      </div>
+  </section> <!-- // #section -->
+
+  <footer id="footBox">
+    <div class="title_logo">
+      <h2>회사정보</h2>
+      <div class="logo"><span class="hidden">코카콜라 로고 이미지 입니다.</span></div>
+    </div>
+      <div class="companyinfo">
+      <div class="family">  
+        <h3>Family-site</h3>
+         <ul>
+           <li><a href="#">한국코카콜라(유)</a></li>
+           <li><a href="#">한국코카콜라음료(주)</a></li>
+           <li><a href="#">코카콜라음료 쇼핑몰</a></li>
+         </ul>
+      </div>     
+      <div class="info">
+        <h3>회사정보</h3>
+                <ul>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">채용</a></li>
+                  <li><a href="#">회사소개</a></li>
+                </ul>
+      </div>
+      <address>
+        <h3>고객 서비스센터</h3>
+          <ul>
+            <li><strong>TEL)</strong> 02-123-4567</li>
+            <li><strong>Address</strong><br />경상남도 양산시 충렬로 263(유산동)</li>
+          </ul>
+      </address>
+      </div>
+      <div class="copyright">&copy; 2017. Coca-cola korea company, Limited. all right reserved.</div>
+    </footer> <!-- // #footer -->
+    </div>
+  </body>
+</html>
+

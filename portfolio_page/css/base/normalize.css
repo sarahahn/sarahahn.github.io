@@ -1,0 +1,9 @@
+/*! normalize.css */
+@charset:"utf-8";
+
+ /* normalize: 일반적으로 자주 사용하는 기법을 등록해서 필요에 따라 바로 사용할 수 있도록 미리 처리.(단축키) */
+    .cf:after,.clearfix:after{content:""; display: block; width:0; height:0; clear:both;}
+    .hidden{display:block; width:0; height:0; overflow:hidden; position: absolute; z-index: -100;}
+    #wrap .first_li{margin-left:0;}
+    .hidden_wrap a>span{width: 0;height: 0;display: block; overflow:hidden;}
+    .full{width: 100%;height: 100%;}

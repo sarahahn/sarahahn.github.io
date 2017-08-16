@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=dege">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="html, css, jquery">
+
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/src/html5shiv.js">/* html5shiv */</script>
+    <script src="../ie/ie7/IE9.js">/* ie9 */</script>
+    <script src="../ie/css3pie/PIE_IE9.js">/* csspie */</script>   
+    <script src="../ie/respond/Respond-master/dest/respond.min.js"></script>   
+  <![endif]-->
+
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/normalize.css">
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+
+  <title>welcome coca-cola</title>
+</head>
+
+<style>
+  #wrap{width:940px; height:auto; margin:0 auto;}
+    #headBox{width:100%; height:180px;}
+      #logo{width:100%; height:138px; border-top:40px solid #000; box-sizing:border-box;}
+      #logo>h1{width:260px; height:80px; background-image:url(../img/pofol_img/header/logo.jpg); background-size:cover; margin:18px 340px 0;}
+      #logo>.gnb{width:475px; height:auto; margin:auto; margin-top: 14px;}
+      #logo>.gnb>ul{width:100%; height:auto;}
+      #logo>.gnb>ul:after{content:" "; display:block; clear:both;}
+      #logo>.gnb>ul>li{width:65px; height:18px; margin-right:30px; float:left;}
+      #logo>.gnb>ul>li:nth-child(3){width:95px;}
+      #logo>.gnb>ul>li:nth-child(4){width:60px;}
+      #logo>.gnb>ul>li:nth-child(5){width:70px; margin-right:0;}
+      #logo>.gnb>ul>li>a:hover{font-weight:bold; color:#000; font-size:1.3em; transition:all 300ms ease-out;}
+
+    #contentBox{width:100%; height:1400px; background-color:#ffa;}
+    #contentBox>#bannerBox{width:100%; height:350px;margin-bottom:100px;background-image:url("../img/pofol_img/brand/banner.jpg");background-repeat:no-repeat;
+                           background-size:cover;}
+
+
+      
+
+    #footBox{width:100%; height:auto; background-color:#000; padding:20px;box-sizing:border-box; color:#fff;}
+      #footBox>.title_logo{width:100%; height:50px; position: relative;}
+      #footBox>.title_logo:after{content:" "; display:block; width: 100%; border-bottom: 1px solid #fff; position: absolute; bottom:1em; left: 0;}
+        #footBox>.title_logo>h2{width:125px;height:36px;margin-left:20px;float:left;text-align:center;}
+        #footBox>.title_logo>.logo{width:88px;height:88px;float:right;margin-top:-10px; position: absolute; z-index:100;
+                                   background-image: url("../img/pofol_img/footer/batch.png"); background-size:100%; background-repeat:no-repeat;top:0; right: 0;}
+        #footBox>#info{width: 690px;height: 115px;margin-left:105px; margin-top:30px;margin-bottom:25px;}
+          #footBox>#info>.family{width:155px; margin-right:155px; float:left; text-align:center;}
+          #footBox>#info>.family>dt{margin-bottom:10px; font-weight:bold;font-size:1.3em;margin-bottom:10px;}
+          #footBox>#info>.family>dd{font-size:0.5em;font-size:0.8em;margin-bottom:7px;}
+          #footBox>#info>.companyinfo{width:75px; margin-right:155px;float:left; text-align:center;}
+          #footBox>#info>.companyinfo>dt{margin-bottom:10px; font-weight:bold;font-size:1.1em;margin-bottom:10px;}
+          #footBox>#info>.companyinfo>dd{font-size:0.5em;font-size:0.8em;margin-bottom:7px;}
+          #footBox>#info>.customer{width:150px;float:left;}
+          #footBox>#info>.customer>dt{margin-bottom:10px; font-weight:bold;font-size:1.3em;margin-bottom:10px;}
+          #footBox>#info>.customer>dd{font-size:0.5em;font-size:0.8em;}
+        #footBox>#copyright{width: 425px;height: 15px; margin-left:258px; margin-bottom:10px;}
+
+
+
+</style>
+
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div id="logo">
+        <h1><span class="hidden">cocacola홈페이지 로고 입니다.</span></h1>
+        <nav class="gnb">
+          <ul>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">COKEZINE</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">NOTICE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> <!-- // #headBox -->
+
+    <section id="contentBox">
+      <div id="bannerBox">
+      </div>
+    </section> <!-- // #section --> 
+
+    <footer id="footBox">
+      <div class="title_logo">
+        <h2>회사정보</h2>
+        <div class="logo"><span class="hidden">코카콜라 이미지 입니다.</span></div>
+      </div>
+      <div id="info">
+        <dl class="family">
+          <dt>FAMILY-SITE</dt>
+            <dd><a href="#">한국코카콜라(유)</a></dd>
+            <dd><a href="#">한국코카콜라(주)</a></dd>
+            <dd><a href="#">한국코카콜라음료 쇼핑몰</a></dd>
+        </dl>
+        <dl class="companyinfo">
+          <dt>회사정보</dt>
+            <dd><a href="#">연혁</a></dd>
+            <dd><a href="#">채용</a></dd>
+            <dd><a href="#">회사소개</a></dd>
+        </dl>
+        <dl class="customer">
+          <dt>고객서비스센터</dt>
+            <dd><strong>TEL)</strong> 080-570-8989</dd>
+            <dd><strong>주소</strong>:<br />
+                경상남도 양산시 충렬로<br />
+                263(유산동)
+            </dd>
+        </dl>
+      </div>
+      <div id="copyright">
+        &copy; 2017. Coca-cola korea company, Limited. all right reserved.
+      </div>
+    </footer> <!-- // #footBox -->
+  </div>
+</body>
+</html>

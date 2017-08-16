@@ -1,0 +1,107 @@
+<style>
+  #wrap{width:940px; height:auto; margin:0 auto; position: relative;}
+    #headBox{width:100%; height:180px;}
+      #logo{width:100%; height:138px; border-top:40px solid #000; box-sizing:border-box;position: relative;}
+      #logo:before{content:" "; display:block; width: 100vw;position:absolute; left:50%; margin-left:-50vw;border:inherit; top:-40px;}
+      #logo>h1{width:260px; height:80px; background-image:url(../img/pofol_img/header/logo.jpg); background-size:cover; margin:18px 340px 0;}
+      #logo>.gnb{width:475px; height:auto; margin:auto; margin-top: 14px;}
+      #logo>.gnb>ul{width:100%; height:auto;}
+      #logo>.gnb>ul:after{content:" "; display:block; clear:both;}
+      #logo>.gnb>ul>li{width:65px; height:18px; margin-right:30px; float:left;}
+      #logo>.gnb>ul>li:nth-child(3){width:95px;}
+      #logo>.gnb>ul>li:nth-child(4){width:60px;}
+      #logo>.gnb>ul>li:nth-child(5){width:70px; margin-right:0;}
+      #logo>.gnb>ul>li>a:hover{font-weight:bold; color:#000; font-size:1.3em; transition:all 300ms ease-out;}
+
+    #contentBox{width:100%; height:auto;}
+      #videoBox{width:100%; height:630px; padding:60px 60px 10px; box-sizing:border-box; position:relative; 
+                margin-bottom:100px;}
+      #videoBox:before{content:" "; display:block;width:100vw; height:550px;background-image:url(../img/pofol_img/header/ribon.png); 
+                        position: absolute; top: 0; left: 50%; margin-left:-50vw; z-index:-50;background-repeat:no-repeat; background-position:center;
+                        background-size:100%; background-attachment:fixed;}
+      #videoBox>.replay{width:820px; height:560px; position:relative;}
+      #videoBox>.replay>iframe{width:100%; height:100%;} /* videoBox 끝 */
+
+      #eventBox{width:100%; height:600px; margin-bottom:100px;position: relative;} /* eventBox끝 */
+        #eventBox>h3{width:180px;height:38px;margin-top:10px; margin-left:380px;font-size:2em; line-height:38px; font-weight:bold; text-align:center;
+                     margin-bottom:50px;}
+        #eventBox>.btn{width:100%;height:0; position:absolute; top:50%; left:0; z-index:150;}
+        #eventBox>.btn>button{width: 50px;height: 100px; float:left; margin-left: 60px; font-size:3em;}
+        #eventBox>.btn>button:last-of-type{float:right; margin-right:60px;}
+        #eventBox>ul{width:2250px; height:100%; margin-left:-1125px;position:absolute; left:50%;}
+        #eventBox>ul>li{width:410px; height:310px;margin-right:50px;margin-top:60px; float:left;background-size:cover;background-repeat:no-repeat;position: relative;}
+        #eventBox>ul>li:before{content: " "; width: 100%; height: 100%; position:absolute;top: 0;left: 0; z-index: 100; background-color: rgba(0,0,0,0.5);}
+        #eventBox>ul>.coke_future{background-image:url("../img/pofol_img/main/event/cokeFeed.png");}
+        #eventBox>ul>.coke_kiss{background-image:url("../img/pofol_img/main/event/cokekiss.png");}
+        #eventBox>ul>.coke_yang{background-image:url("../img/pofol_img/main/event/cokeyang.png");}
+        #eventBox>ul>.coke_gold{background-image:url("../img/pofol_img/main/event/cokegold.png");}
+        #eventBox>ul>.coke_heart{background-image:url("../img/pofol_img/main/event/insertword.png");}
+        #eventBox>ul>li:nth-child(3){position:relative; transform:scale(1.5) translateY(20px); z-index:200; border:1px solid #000; box-sizing:border-box;}
+        #eventBox>ul>li:nth-child(3):before{background-color:rgba(255,255,255,0.0);}
+        #eventBox>ul>li:last-child{margin-right:0;}
+        #eventBox>ul>li>a{width:100%;height:100%;display:block;}
+
+      #snsBox{width:100%; height:160px; background-color:#000; margin-bottom:100px; padding:15px 220px; box-sizing:border-box;
+              position:relative;}  /* snsBox끝 */
+      #snsBox:after{content:" ";display:block;width: 100vw; height:inherit; background-color:inherit;position: absolute;left:50%; margin-left:-50vw; 
+                    top:0; z-index: -100;}
+        #snsBox>h3{width:500px; height:25px; line-height:25px; margin-bottom:15px; color:#fff; text-align:center; font-size:1.5em}
+        #snsBox>ul{width:460px; height: 90px;margin-left:20px; padding:15px 0; box-sizing:border-box;}
+        #snsBox>ul>li{width:60px; height:60px; margin-right:73px; float:left; font-size:4.5em; line-height: 60px; color:#fff;}
+        #snsBox>ul>li:hover{color:#f40000;}
+        #snsBox>ul>li>a{width: 100%;height: 100%; display: block; color:inherit}
+        #snsBox>ul>li i{line-height:inherit;}
+
+        #snsBox>ul>li:last-child{margin-right:0;}
+
+      #productBox{width:100%; height:620px; margin-bottom:80px; padding:10px 60px 0; box-sizing:border-box;} /* productBox끝 */
+        #productBox>h3{width:260px; height:40px;margin-left:280px; margin-bottom:55px; 
+                        font-size:2em; line-height:40px; font-weight:bold; text-align:center;}
+        #productBox a{width: 100%;height: 100%; display:block;font-weight:bold; font-size:0.9em;
+                      color:transparent;position: relative;}
+        #productBox a>.under_text{width: 100%;height: auto; position:absolute;color:#fff;bottom:0;left:130px;z-index:100;}
+        #productBox>#r-side{width:400px; height:435px;margin-right:20px; margin-bottom:50px; float:left;}
+          #productBox>#r-side .under_text{line-height:50px;}
+          #productBox .product a{overflow: hidden; text-transform:uppercase;}
+          #productBox .product a:hover .under_text{bottom:0;text-transform:uppercase;}
+          #productBox>#r-side>.fanta{width:400px; height:300px; margin-bottom:20px;background-position:center;
+                                      background-image:url("../img/pofol_img/main/product/fanta_green.jpg");background-size:110%; 
+                                      background-repeat:no-repeat;}
+          #productBox .product .under_text{display:block; width:100%; height:50px; position:absolute; text-align: center;
+                            bottom:-50px; left: 0; transition:all 300ms; z-index: 500;  background-color:#f40000; color:#fff;}
+          #productBox>#r-side>.toreta{width:400px; height:115px; background-image:url("../img/pofol_img/main/product/toreta.jpg");
+                                      background-size:110%; background-position:bottom; background-repeat:no-repeat;position:relative;}
+        #productBox>#l-side{width:400px; height:435px; margin-bottom:50px; float:left;}
+          #productBox>#l-side>.fuze_tea{width: 190px;height: 190px;background-color: #fff; margin-bottom:20px; margin-right:20px; float:left;
+                                        background-image:url("../img/pofol_img/main/product/fuze_tea.png"); background-size:110%;
+                                        background-repeat:no-repeat; background-position:center;}
+          #productBox>#l-side>.soonsoo{width: 190px;height: 190px;background-color: #fff; margin-bottom:20px; float:left;
+                                       background-image:url("../img/pofol_img/main/product/soonsoo.png"); background-size:110%;background-repeat:no-repeat;
+                                       background-position:center;}
+          #productBox>#l-side>.seagram{width: 400px;height: 225px;background-color: #fff; float:left;background-position:center;
+                                       background-image:url("../img/pofol_img/main/product/seagram.png"); background-size:110%;background-repeat:no-repeat;} 
+        #productBox>.more{width:820px; height:30px; font-weight:bold; font-size:1.5em; text-align:center;}
+        #productBox>.more>a{content:" ";display:block; clear:both; padding:0; color:#000;}
+        #productBox>.more>a:hover{background-color:#f40000; color:#fff;}
+
+    #footBox{width:100vw; height:auto; background-color:#000; padding:20px; box-sizing:border-box; color:#fff; left:50%; margin-left:-50vw; position:absolute;}
+      #footBox>.title_logo{width:100%; height:50px; position: relative;}
+      #footBox>.title_logo:after{content:" "; display:block; width: 100%; border-bottom: 1px solid #fff; position: absolute; bottom:1em; left:0;}
+        #footBox>.title_logo>h2{width:125px;height:36px;margin-left:20px;float:left;text-align:center;}
+        #footBox>.title_logo>.logo{width:88px;height:88px;float:right;margin-top:-10px; position: absolute; z-index:100;
+                                   background-image: url("../img/pofol_img/footer/batch.png"); background-size:100%; background-repeat:no-repeat;top:0; right: 0;}
+        #footBox>#info{width: 690px;height: 115px;margin:0 auto; margin-top:30px;margin-bottom:25px;}
+          #footBox>#info>.family{width:155px; margin-right:155px; float:left; text-align:center;}
+          #footBox>#info>.family>dt{margin-bottom:10px; font-weight:bold;font-size:1.3em;margin-bottom:10px;}
+          #footBox>#info>.family>dd{font-size:0.5em;font-size:0.8em;margin-bottom:7px;}
+          #footBox>#info>.companyinfo{width:75px; margin-right:155px;float:left; text-align:center;}
+          #footBox>#info>.companyinfo>dt{margin-bottom:10px; font-weight:bold;font-size:1.1em;margin-bottom:10px;}
+          #footBox>#info>.companyinfo>dd{font-size:0.5em;font-size:0.8em;margin-bottom:7px;}
+          #footBox>#info>.customer{width:150px;float:left;}
+          #footBox>#info>.customer>dt{margin-bottom:10px; font-weight:bold;font-size:1.3em;margin-bottom:10px;}
+          #footBox>#info>.customer>dd{font-size:0.5em;font-size:0.8em;}
+        #footBox>#copyright{width: 425px;height: 15px; margin:0 auto; margin-bottom:10px;}
+
+
+
+</style>
